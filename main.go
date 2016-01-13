@@ -25,7 +25,7 @@ type Answer struct {
 
 type Answers []Answer
 
-func (as *Answers) Value() (driver.Value, error) {
+func (as Answers) Value() (driver.Value, error) {
 	return json.Marshal(as)
 }
 
